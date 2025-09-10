@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- We will use a local CSS file and Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <!-- Track Art -->
+        <img src="" alt="Album Art" class="track-art" id="track-art">
+
+        <!-- Track Details -->
+        <div class="track-details">
+            <div class="track-name" id="track-name">Track Name</div>
+            <div class="track-artist" id="track-artist">Artist Name</div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <!-- Time Display -->
+        <div class="time-display">
+            <div id="current-time">0:00</div>
+            <div id="total-duration">0:00</div>
+        </div>
+
+        <!-- Player Controls -->
+        <div class="controls">
+            <button class="control-btn" id="prev-btn">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn" id="play-pause-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn" id="next-btn">
+                <i class="fas fa-step-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audio"></audio>
+
+    <!-- We will use a local JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
